@@ -1,2 +1,2 @@
 # pencilcase
-a student to educator network for aggregating learning content
+a student content curator for learning
