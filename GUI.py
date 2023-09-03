@@ -1,17 +1,29 @@
-from taipy import Gui
-import pandas as pd
+import taipy.gui
+import html
 
-#getting started with light mode
-Gui(page="# getting started with *taipy*").run(dark_mode=False) # #creates a title, ## creates a subtitle, * for italics, ** for bold
+# Create a Gui object
+gui = taipy.gui.Gui()
 
-def get_data(path_to_csv: str):
-    # pandas.read_csv() returns a pd.DataFrame
-    dataset = pd.read_csv(path_to_csv)
-    dataset["Date"] = pd.to_datetime(dataset["Date"])
-    return dataset
+# Create an Html page with the custom search engine code
+html_page = taipy.gui.Html("Search Page")
+html_page.load_html("<div class=\"gcse-search\"></div><script async src=\"https://cse.google.com/cse?cx=c6456045664d54b97\"></script>")
 
-# Read the dataframe
-path_to_csv = "dataset.csv"
-dataset = get_data(path_to_csv)
+# Add the page to the Gui object
+gui.add_page(html_page)
 
-# search engine <script async src="https://cse.google.com/cse.js?cx=c6456045664d54b97"> </script> <div class="gcse-search"></div>
+# Run the Gui object
+gui.run()
+
+import taipy.gui
+
+# Create a Gui object
+gui = taipy.gui.Gui()
+
+# Create a Markdown page with the custom search engine code
+md_page = taipy.gui.Markdown("<div class=\"gcse-search\"></div><script async src=\"https://cse.google.com/cse?cx=c6456045664d54b97\"></script>")
+
+# Add the page to the Gui object
+gui.add_page(md_page)
+
+# Run the Gui object
+gui.run()
