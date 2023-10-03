@@ -9,11 +9,18 @@
     text-transform: none;
 }
 
+*:focus {
+    outline: 2px dashed blue;
+    background-color: rgb(255, 255, 255);
+    color:rgb(29, 115, 29);
+    font-weight: 800;
+}
+
 .description {
-    margin: 21px auto !important;
     padding-left: 200px;
-    padding-bottom: 10px;
     font-style: normal;
+    font-weight: 400;
+    font-size: large;
 }
 
 .logo {
@@ -27,21 +34,18 @@
     /* width: auto; */
     width: 70%;
     border-radius: 21px;
-    margin-top: 5px;
+    margin-top: -8px;
 }
 
-.gs-imageResult {
-    max-width: 30px; /* change this value to your desired width */
-    max-height: 20px; /* change this value to your desired height */
-}
+/* Increase the margin and padding of the headings */
+.gs-title {
+    margin: 10px; /* change this value to your desired margin */
+    padding: 8px; /* change this value to your desired padding */
+    line-height: 2; /* */
+  }
 
-.gs-imageResult img {
-    width: 100% !important; /* make the image fill the width of the parent element */
-    height: auto !important; /* make the image keep its aspect ratio */
-}
+/*.gsc-input-box {
+  }
 
-:focus {
-    outline: 1px grey;
-    background-color: white;
-    color: black;
-}
+.gsc-search-button-v2 {
+  }*/
