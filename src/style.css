@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+*{
+    font-family: 'Dm Mono', monospace;
+    margin: auto;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none  ;
+    text-transform: none;
+}
+
+.description {
+    margin: 21px auto !important;
+    padding-left: 200px;
+    padding-bottom: 10px;
+    font-style: normal;
+}
+
+.logo {
+    margin: 25px auto;
+    width: 15%;
+}
+
+/* default+en.css | https://www.google.com/cse/static/element/e992cd4de3c7044f/default+en.css */
+
+.gsc-control-cse, .gsc-control-cse .gsc-table-result {
+    /* width: auto; */
+    width: 70%;
+    border-radius: 21px;
+    margin-top: 5px;
+}
+
+.gs-imageResult {
+    max-width: 30px; /* change this value to your desired width */
+    max-height: 20px; /* change this value to your desired height */
+}
+
+.gs-imageResult img {
+    width: 100% !important; /* make the image fill the width of the parent element */
+    height: auto !important; /* make the image keep its aspect ratio */
+}
+
+:focus {
+    outline: 1px grey;
+    background-color: white;
+    color: black;
+}
